@@ -1,0 +1,155 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>KZ-Store</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="kzStoreAngularApp">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <div class="container-fluid">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                <span class="glyphicon glyphicon-shopping-cart"></span> 
+                KZ-Store
+              </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+              <ul class="nav navbar-nav">
+                <li class="dropdown">
+                  <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                    Categorias <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#produtos">Eletrônicos</a></li>
+                    <li><a href="#produtos">Informática</a></li>
+                    <li><a href="#produtos">Viagens</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Digite o que procura...">
+                </div>
+                <button type="submit" class="btn btn-default">
+                  <span class="glyphicon glyphicon-search"></span>
+                  Buscar
+                </button>
+              </form>
+              <ul class="nav navbar-nav navbar-left">
+                <li><a href="#carrinho">Carrinho</a></li>
+                <li><a href="#finalizar-compra">Finalizar compra</a></li>
+                <li><a href="#pedidos">Meus pedidos</a></li>
+                <li><a href="#login">Login</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+
+          </div>
+        </nav>
+
+        <div class="row">
+          <div class="col-md-2 hidden-xs hidden-sm">
+            <ul class="nav nav-pills nav-stacked">
+              <li class="active"><a href="">Eletrônicos</a></li>
+              <li><a href="#produtos">TV</a></li>
+              <li><a href="#produtos">DVD</a></li>
+              <li class="active"><a href="">Informática</a></li>
+              <li><a href="#produtos">Notebook</a></li>
+              <li><a href="#produtos">Computador</a></li>
+              <li><a href="#produtos">Placa-mãe</a></li>
+              <li><a href="#produtos">Processador</a></li>
+              <li><a href="#produtos">Memória</a></li>
+            </ul>
+          </div>
+          <div ng-view="" class="col-md-10"></div>
+        </div>
+
+        <div class="footer">
+          <div class="col-xs-12 center">
+            <p>Plataforma <strong>KZ-Store</strong>. A primeira solução open source de e-commerce totalmente desenvolvida para o mercado brasileiro.</p>
+          </div>
+        </div>
+      
+    </div>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/oldieshim.js -->
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+    <!-- endbuild -->
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/json3/lib/json3.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/produto.js"></script>
+        <script src="scripts/controllers/produtos.js"></script>
+        <script src="scripts/controllers/carrinho.js"></script>
+        <script src="scripts/controllers/finalizar-compra.js"></script>
+        <script src="scripts/controllers/login.js"></script>
+        <script src="scripts/controllers/pedido.js"></script>
+        <script src="scripts/controllers/pedidos.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

@@ -1,0 +1,102 @@
+<div class="row">
+  <div class="col-xs-12">
+  	<ol class="breadcrumb">
+	  <li><a href="#">Início</a></li>
+	  <li class="active">Carrinho</li>
+	</ol>
+  	<h1>Carrinho</h1>
+  	<hr />
+  	<div class="table-responsive">
+	  <table class="table table-striped table-bordered">
+	    <tr>
+	    	<th colspan="2">&nbsp;</th>
+	    	<th>Produto</th>
+	    	<th>Preço</th>
+	    	<th>Quantidade</th>
+	    	<th>Total</th>
+	    </tr>
+	    <tr>
+	    	<td class="center"><a href=""><span class="glyphicon glyphicon-remove-circle"></span></a></td>
+	    	<td class="center"><img src="images/produto300x300.png" alt="..." width="30"></td>
+	    	<td>Produto 1</td>
+	    	<td>R$ 100,00</td>
+	    	<td>1</td>
+	    	<td>R$ 100,00</td>
+	    </tr>
+	    <tr>
+	    	<td class="center"><a href=""><span class="glyphicon glyphicon-remove-circle"></span></a></td>
+	    	<td class="center"><img src="images/produto300x300.png" alt="..." width="30"></td>
+	    	<td>Produto 2</td>
+	    	<td>R$ 150,00</td>
+	    	<td>2</td>
+	    	<td>R$ 300,00</td>
+	    </tr>
+	    <tr>
+	    	<td colspan="6">
+	    		<a href="#" class="btn btn-primary" role="button">
+	    			<span class="glyphicon glyphicon-refresh"></span>
+		      		Atualizar carrinho
+		      	</a>
+		      	<a href="#finalizar-compra" class="btn btn-primary" role="button">
+		      		<span class="glyphicon glyphicon-record"></span>
+		      		Finalizar compra
+		      	</a>
+	    	</td>
+	    </tr>
+	  </table>
+  	  <br />
+	</div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12 col-md-4">
+	<h2>Cálculo do frete</h2>
+	<form class="form-inline well" role="form">
+	  <div class="form-group">
+	    <input type="text" class="form-control" id="cep" name="cep" placeholder="CEP">
+	  </div>
+	  <button type="submit" class="btn btn-default">
+	  	<span class="glyphicon glyphicon-repeat"></span>
+	  	Calcular
+	  </button>
+	  <br />
+	  <p><strong>Formas de entrega</strong></p>
+  	  <div class="radio">
+	    <label>
+	      <input type="radio" name="optionsRadiosF" id="optionsRadios1F" value="option1" checked>
+	      <strong>Pac:</strong> R$ 11,45 (3 dias úteis)
+	    </label>
+	  </div>
+	  <div class="radio">
+	    <label>
+	      <input type="radio" name="optionsRadiosF" id="optionsRadios2F" value="option2">
+	      <strong>Sedex:</strong> R$ 15,88 (1 dia útil)
+	    </label>
+	  </div>
+	</form>
+  </div>
+
+  <div class="col-xs-12 col-md-8">
+	<h2>Totais</h2>
+  	<div class="table-responsive">
+	  <table class="table">
+	  	<tr>
+	  		<th>Total do carrinho</th>
+	  		<td>R$ 450,00</td>
+	  	</tr>
+	  	<tr>
+	  		<th>Frete</th>
+	  		<td>R$ 25,00</td>
+	  	</tr>
+	  	<tr>
+	  		<th>Total</th>
+	  		<td>R$ 475,00</td>
+	  	</tr>
+	  </table>
+	</div>
+	<br />
+    <br />
+    <br />
+  </div>
+</div>
