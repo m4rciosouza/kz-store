@@ -1,7 +1,7 @@
 kz-store
 ========
 
-Plataforma de e-commerce gratuita criada com AngularJS.
+Plataforma de e-commerce gratuita criada com AngularJS (http://kazalestore.com).
 
 Utiliza Resftful para comunicação com o servidor, permitindo ser conectada a qualquer implementação escrita em qualquer linguagem, como PHP, Java, NodeJS, .Net, Ruby, dentre outras.
 
@@ -19,6 +19,12 @@ npm install
 bower install
 grunt serve
 ```
+
+### Como colaborar
+
+Para colaborar com o desenvolvimento de nossa plataforma basta efetuar o fork de nosso repositório, adicionar a sua implementação e depois enviar um pull request, para que possamos integrar a sua implementação em nossa plataforma.
+
+Seu nome aparecerá na lista de colaboradores em nosso site oficial!
 
 ### License
 
